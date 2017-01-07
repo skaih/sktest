@@ -32,10 +32,10 @@ var exec = require('cordova/exec');
     });
 */
  //第一个字符串表示你的插件的id，在cordova_plugins.js中需要
-cordova.define("cordova-plugin-Sktest.Sktest", function(require, exports, module) {用到
+cordova.define("cordova-plugin-Sktest.Sktest", function(require, exports, module) {
 var exec = require('cordova/exec');
 var locateDate =  {
-               test:function(callback){ //js调用的方法
+               test:function(callback){
                     exec(callback, function(err){
                     alert("获取时间出错");
                     }, "Sktest", "test", [""]);
