@@ -27,6 +27,7 @@
     <description>Cordova Sktest Plugin</description>
     <license>Apache 2.0</license>
     <keywords>cordova,Sktest</keywords> 
+	<repo>https://github.com/skaih/sktest.git</repo>
     <engines>
             <engine name="cordova" version=">=3.0.0" />
     </engines>
