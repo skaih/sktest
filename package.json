@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-Sktest",
-  "version": "2.2.2-dev",
+  "version": "1.0.0",
   "description": "Cordova Sktest Plugin",
   "cordova": {
     "id": "cordova-plugin-Sktest",
