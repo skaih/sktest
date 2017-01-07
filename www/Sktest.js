@@ -31,11 +31,10 @@ var exec = require('cordova/exec');
         alert(echoValue == "echome"); // should alert true.
     });
 */
- //第一个字符串表示你的插件的id，在cordova_plugins.js中需要
-cordova.define("cordova-plugin-Sktest", function(require, exports, module) {
+cordova.define("cordova-plugin-Sktest", function(require, exports, module) { 
 var exec = require('cordova/exec');
 var locateDate =  {
-               test:function(callback){
+               test:function(callback){ //js调用的方法
                     exec(callback, function(err){
                     alert("获取时间出错");
                     }, "Sktest", "test", [""]);

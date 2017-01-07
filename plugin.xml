@@ -26,14 +26,13 @@
     <name>Sktest</name>
     <description>Cordova Sktest Plugin</description>
     <license>Apache 2.0</license>
-    <keywords>cordova,Sktest</keywords>
-
+    <keywords>cordova,Sktest</keywords> 
     <engines>
             <engine name="cordova" version=">=3.0.0" />
     </engines>
 
     <js-module src="www/Sktest.js" name="Sktest">
-        <clobbers target="window.Sktest" />
+        <clobbers target="Sktest" />
     </js-module>
  
     <!-- ios -->
@@ -41,7 +40,7 @@
 
         <config-file target="config.xml" parent="/*">
             <feature name="Sktest">
-                <param name="ios-package" value="cordova-plugin-Sktest.Sktest" />
+                <param name="ios-package" value="Sktest" />
                 <param name="onload" value="true" />
             </feature> 
         </config-file>
