@@ -33,7 +33,7 @@
     </engines>
 
     <js-module src="www/Sktest.js" name="Sktest">
-        <clobbers target="window.Sktest" />
+        <clobbers target="Sktest" />
     </js-module>
  
     <!-- ios -->

@@ -19,10 +19,30 @@
  *
 */
 
-/* global cordova */
+/* global cordova 
 
 var exec = require('cordova/exec');
-cordova.exec(null,null,"Sktest","test",[]);
+ window.echo = function(str, callback) {
+        cordova.exec(callback, function(err) {
+            callback('Nothing to echo.');
+        }, "Sktest", "test", [str]);
+ };
+ window.echo("echome", function(echoValue) {
+        alert(echoValue == "echome"); // should alert true.
+    });
+*/
+cordova.define("cordova-plugin-Sktest", function(require, exports, module) { //第一个字符串表示你的插件的id，在cordova_plugins.js中需要用到
+var exec = require('cordova/exec');
+var locateDate =  {
+               test:function(callback){ //js调用的方法
+                    exec(callback, function(err){
+                    alert("获取时间出错");
+                    }, "Sktest", "test", [""]);
+		 }
+               };
 
+module.exports = locateDate;
 
-module.exports = Sktest;
+});
+
+//window.Sktest.test();
