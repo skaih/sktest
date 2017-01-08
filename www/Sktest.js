@@ -29,10 +29,9 @@ var exec = require('cordova/exec');
  };
  window.echo("echome", function(echoValue) {
         alert(echoValue == "echome"); // should alert true.
-    });
+    }); 
 	
-	
-
+/*
 cordova.define("cordova-plugin-Sktest", function(require, exports, module) { 
 var exec = require('cordova/exec');
 var locateDate =  {
@@ -46,5 +45,6 @@ var locateDate =  {
 module.exports = locateDate;
 
 });
+*/
 
 //window.Sktest.test();
