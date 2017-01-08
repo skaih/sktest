@@ -19,7 +19,7 @@
  *
 */
 
-/* global cordova 
+/* global cordova */
 
 var exec = require('cordova/exec');
  window.echo = function(str, callback) {
@@ -30,7 +30,9 @@ var exec = require('cordova/exec');
  window.echo("echome", function(echoValue) {
         alert(echoValue == "echome"); // should alert true.
     });
-*/
+	
+	
+
 cordova.define("cordova-plugin-Sktest", function(require, exports, module) { 
 var exec = require('cordova/exec');
 var locateDate =  {
